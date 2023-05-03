@@ -1,5 +1,4 @@
 package com.credex.CredCoin.Controller;
-
 import org.json.JSONObject;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,19 +15,19 @@ import ch.qos.logback.classic.Logger;
 import jakarta.servlet.http.HttpServletRequest;
 
 @org.springframework.stereotype.Controller
-public class Controller {
-
+public class Dashboardcontroller {
 	@Autowired
 	private ServiceLayer services;
 
-	@GetMapping("/")
-public String hello() {
-	return "Login";
-}
-	@GetMapping("/user")
-	public String user() {
-		return "enduser";
+	@PostMapping("/dashboard")
+	public String doLogin(HttpServletRequest request, @RequestParam String username, @RequestParam String password,
+			Model model) throws Exception {
+
+		System.out.println(username);
+		System.out.println(password);
+		
+		JSONObject productJson = services.loginapi(username, password);
+			return "adminforntend";
+		
 	}
-	
-	
 }
