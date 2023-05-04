@@ -228,7 +228,19 @@ nav .profile-area .theme-btn span{
     nav .profile-area button{
         display: none;
     }
-
+.dropdown-menu a{
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        height: 4.2rem;
+        color: var(--color-gray-light);
+        position: relative;
+        background: #252f83;
+    }
+    .dropdown-menu a:hover{
+        color: var( --color-primary);
+        background: #8e93c4;
+    }
     /*=======Aside and Sidebar====*/
     main{
         display: grid;
@@ -408,7 +420,7 @@ nav .profile-area .theme-btn span{
     }
     main .monthly-report h1{
         font-weight: 800;
-        font-size: 8rem;
+       font-size: 1.8rem;
     }
     /*===========FAST PAYMENT=====*/
 main .fast-payment{

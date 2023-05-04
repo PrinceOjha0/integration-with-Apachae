@@ -230,7 +230,32 @@ nav .profile-area .theme-btn span{
     nav .profile-area button{
         display: none;
     }
-
+  .dropdown-menu a{
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        height: 4.2rem;
+        color: var(--color-gray-light);
+        position: relative;
+        background: #252f83;
+    }
+    .dropdown-menu a:hover{
+        color: var( --color-primary);
+        background: #8e93c4;
+    }
+    .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1rem;
+    clear: both;
+    font-weight: 400;
+   color: var(--color-gray-light);
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background: #252f83;
+    border: 0;
+}
     /*=======Aside and Sidebar====*/
     main{
         display: grid;
