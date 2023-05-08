@@ -27,7 +27,7 @@ public String hello() {
 }
 	@GetMapping("/user")
 	public String user() {
-		return "customer";
+		return "adminforntend";
 	}
 	
 	

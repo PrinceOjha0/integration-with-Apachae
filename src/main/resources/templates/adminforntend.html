@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -47,7 +47,7 @@
     />
 
     <!--Styling Sheet-->
-    <link rel="stylesheet" type="text/css" href="../css/admidashboard.css" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/admidashboard.css}" />
   </head>
   <body>
     <section id="nav-bar ">

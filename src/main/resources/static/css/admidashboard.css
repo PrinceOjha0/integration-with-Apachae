@@ -1,4 +1,4 @@
-/*  Root css varibles*/
+/*  Roos*/
 :root {
     --color-white:#ffffff;
     --color-light: #f0eff5;
@@ -235,11 +235,10 @@ nav .profile-area .theme-btn span{
         height: 4.2rem;
         color: var(--color-gray-light);
         position: relative;
-        background: #252f83;
-    }
+
+}
     .dropdown-menu a:hover{
-        color: var( --color-primary);
-        background: #8e93c4;
+       color: var( --color-primary);
     }
     /*=======Aside and Sidebar====*/
     main{
